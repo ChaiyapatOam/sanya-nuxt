@@ -146,6 +146,12 @@ export default {}
 </script>
 
 <style scoped>
+.navbar {
+  background-color: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+  padding: 0.5rem 1rem;
+}
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: white;

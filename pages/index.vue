@@ -29,7 +29,6 @@
           >
         </b-card>
       </b-card-group>
-
     </div>
     <div style="font-size: 30px">
       <b-icon-facebook></b-icon-facebook>

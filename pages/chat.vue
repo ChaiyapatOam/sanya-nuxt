@@ -1,6 +1,6 @@
 <template>
   <div class="container p-0">
-    <h1 class="h3 mb-3">Messages</h1>
+    <h1 class="h2 mb-3">Messages</h1>
 
     <div class="card">
       <div class="row g-0">
@@ -478,3 +478,15 @@
     </div>
   </div>
 </template>
+
+<!-- <style scoped>
+/* Write Css */
+.mb-3 {
+  background-color: aquamarine;
+  margin: 10px;
+}
+
+.h2 {
+  color: aquamarine;
+}
+</style> -->
