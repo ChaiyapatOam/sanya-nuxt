@@ -15,12 +15,10 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: ['~/assets/styles/bootstrap-custom.scss'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-    {src:"./plugins/v-calendar.js", mode: 'client'},
-  ],
+  plugins: [{ src: './plugins/v-calendar.js', mode: 'client' }],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -32,7 +30,8 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    'bootstrap-vue/nuxt'
+    'bootstrap-vue/nuxt',
+    '@nuxtjs/style-resources',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -43,14 +42,24 @@ export default {
   bootstrapVue: {
     bootstrapCSS: true, // Or `css: false`
     bootstrapVueCSS: true, // Or `bvCSS: false`
-    icons: true
+    icons: true,
+  },
+  styleResources: {
+    scss: './assets/styles/_variables.scss',
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    transpile: ['v-calendar']
+    transpile: ['v-calendar'],
+    loaders: {
+      sass: {
+        implementation: require('sass'),
+      },
+      scss: {
+        implementation: require('sass'),
+      },
+    },
   },
   server: {
     port: '5000',
   },
 }
- 

@@ -4,6 +4,6 @@
       src="https://picsum.photos/125/125/?image=40"
       rounded="circle"
     ></b-avatar>
-    Username
+    Username 
   </div>
 </template>

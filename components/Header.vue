@@ -1,28 +1,12 @@
 <template>
   <div>
-    <!-- <div class="topnav">
-      <a class="active" href="#home">Home Logo</a>
-      <a href="#news">ชุมชน</a>
-      <a href="#news">เกี่ยวกับเรา</a>
-      <a href="#news">ติดต่อเรา</a>
-      <a href="#news">ช่วยเหลือ</a>
-      <a href="#news">SANYA ACADEMY</a>
-      <a href="#contact">Contact</a>
-      <a href="#about">About</a>
-      <div class="split">
-        <a href="#about">เข้าสู่ระบบ</a>
-        <a href="">TH</a> | <a href="">EN</a>
-      </div>
-    </div> -->
-    <!-- Fixed navbar -->
+    <!-- /?lang=th -->
     <nav
       class="navbar navbar-expand-md navbar-light bg-light text-darkgreen fixed-top"
       id="NAV"
     >
       <div class="container-fluid">
-        <h1 class="navbar-brand text-darkgreen" to="/">
-          <a href="/"></a> Sanya
-        </h1>
+        <h1 class="navbar-brand"><nuxt-link to="/home">Sanya</nuxt-link></h1>
         <button
           class="navbar-toggler"
           type="button"
@@ -36,15 +20,21 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="http://localhost:8000/login">Admin</a>
-            </li>
+            <!-- บริการ -->
             <li>
-              <b-dropdown variant="link" class="dropdown">
+              <b-dropdown
+                variant="link"
+                toggle-class="text-decoration-none"
+                class="text-teal"
+              >
                 <template #button-content>
                   <span class="text-teal">บริการ</span></template
                 >
-                <b-dropdown-item href="#">สัญญาสำเร็จรูป</b-dropdown-item>
+                <b-dropdown-item href="#" class="item">
+                  <nuxt-link to="/contract/all" class="disable"
+                    >สัญญาสำเร็จรูป</nuxt-link
+                  >
+                </b-dropdown-item>
                 <b-dropdown-item href="#"
                   >ค้นหาฟรีแลนซ์ด้านกฎหมาย</b-dropdown-item
                 >
@@ -60,23 +50,26 @@
             </li>
 
             <li class="nav-item">
-              <a href="" class="nav-link">เกี่ยวกับเรา</a>
+              <nuxt-link to="/about" class="nav-link">เกี่ยวกับเรา</nuxt-link>
             </li>
 
+            <!--ติดต่อเรา -->
             <li>
-              <b-dropdown variant="link">
+              <b-dropdown variant="link" toggle-class="text-decoration-none">
                 <template #button-content> ติดต่อเรา </template>
                 <b-dropdown-item href="#"
                   ><b-icon-inbox></b-icon-inbox> ติดต่อเรา</b-dropdown-item
                 >
-                <b-dropdown-item href="#"
+                <b-dropdown-item
+                  href="https://www.facebook.com/"
+                  target="_blank"
                   ><b-icon-facebook></b-icon-facebook> Facebook</b-dropdown-item
                 >
                 <b-dropdown-item href="#">
                   <b-icon-instagram></b-icon-instagram>
                   Instagram</b-dropdown-item
                 >
-                <b-dropdown-item href="#">
+                <b-dropdown-item href="https://www.youtube.com/">
                   <b-icon-youtube></b-icon-youtube> Youtube</b-dropdown-item
                 >
                 <b-dropdown-item href="#">
@@ -91,8 +84,9 @@
               </b-dropdown>
             </li>
 
+            <!-- ช่วยเหลือ -->
             <li>
-              <b-dropdown variant="link">
+              <b-dropdown variant="link" toggle-class="text-decoration-none">
                 <template #button-content> ช่วยเหลือ </template>
                 <b-dropdown-item href="#"
                   >วิธีใช้บริการสัญญาสำเร็จรูป</b-dropdown-item
@@ -111,6 +105,7 @@
           </ul>
         </div>
       </div>
+      <!-- Right Side -->
       <div class="float-right" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
@@ -129,7 +124,9 @@
           </li>
 
           <li class="nav-item">
-            <a href="" class="nav-link"><b-icon-heart></b-icon-heart></a>
+            <a href="" class="nav-link" style="color: #1d434c"
+              ><b-icon-heart></b-icon-heart
+            ></a>
           </li>
 
           <li class="nav-item">
@@ -146,39 +143,46 @@ export default {}
 </script>
 
 <style scoped>
-/* Add a black background color to the top navigation */
-.topnav {
-  background-color: white;
-  overflow: hidden;
-  text-align: center;
+a.dropdown-item a {
+  color: #1d434c;
+}
+b-dropdown-item {
+  background-color: #1d434c;
+  color: #04aa6d;
+}
+b-dropdown:hover .dropdown-item {
+  display: block;
+  margin-top: 0;  
 }
 
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  /* color: #f2f2f2; */
-  text-align: center;
-  padding: 14px 16px;
+li.nav-item a.navlink {
+  color: #1d434c;
+}
+.btn-link {
+  color: #1d434c;
   text-decoration: none;
-  font-size: 17px;
 }
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #04aa6d;
+.btn-link:hover {
   color: white;
 }
-.topnav .split {
-  float: right;
+span.text-teal {
+  color: #1d434c;
+}
+li a.nav-link {
+  color: #1d434c;
+}
+.disabled {
+  color: lightgrey;
+  pointer-events: none;
 }
 
-b-dropdown b-dropdown-item:hover {
+/* Button Login */
+.btn:hover {
   background-color: #1d434c;
+  color: white;
+}
+.btn-outline-info {
+  color: #1d434c;
+  border-color: #1d434c;
 }
 </style>

@@ -3,7 +3,10 @@
   <div class="text-center">
     <Header />
     <!-- Jumbotron -->
-    <div class="p-5 text-center bg-light" style="margin-top: 58px">
+    <div
+      class="p-5 text-center bg-light"
+      style="margin-top: 58px; color: #1d434c"
+    >
       <h1 class="mb-3">Welcome</h1>
       <h2 class="mb-3">สวัสดีครับ...</h2>
       <!-- <a class="btn btn-primary" href="" role="button">Call to action</a> -->
@@ -29,7 +32,6 @@
           >
         </b-card>
       </b-card-group>
-
     </div>
     <div style="font-size: 30px">
       <b-icon-facebook></b-icon-facebook>
@@ -60,4 +62,16 @@ b-card-group b-card:hover {
 b-card-group.mybox:hover {
   background-color: aquamarine;
 }
+div.card {
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+div.card:hover {
+  background-color: #1d434c;
+  color: white;
+  cursor: pointer;
+}
+/* div.card :hover {
+  color: white;
+
+} */
 </style>
