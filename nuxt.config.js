@@ -50,14 +50,6 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     transpile: ['v-calendar'],
-    loaders: {
-      sass: {
-        implementation: require('sass'),
-      },
-      scss: {
-        implementation: require('sass'),
-      },
-    },
   },
   server: {
     port: '5000',
