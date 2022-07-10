@@ -4,10 +4,7 @@
     <!-- <section
       class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
     >
-
-
     </section> -->
-
     <!-- Section: Links  -->
     <section class="p-2">
       <div class="container text-center text-md-start mt-5">
@@ -79,7 +76,7 @@
 // import instagram from "../assets/Icons/instagram-brands.svg";
 // import linkedin from "../assets/Icons/linkedin-brands.svg";
 export default {
-  name: 'footer-vue',
+  name: 'Footer',
   components: {
     // youTube,
     // twitter,
@@ -90,7 +87,8 @@ export default {
 </script>
 
 <style scoped>
-footer.myfoot {
+footer {
+  
   background-color: #1d434c;
 }
 </style>

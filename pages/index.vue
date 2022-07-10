@@ -1,7 +1,6 @@
 <template>
   <!-- Welcome -->
   <div class="text-center">
-    <Header />
     <!-- Jumbotron -->
     <div
       class="p-5 text-center bg-light"
@@ -49,13 +48,12 @@
         </b-card> -->
       </b-card-group>
     </div>
-    <div style="font-size: 30px;color: #1d434c;">
+    <div style="font-size: 30px; color: #1d434c">
       <b-icon-facebook></b-icon-facebook>
       <b-icon-instagram></b-icon-instagram>
       <b-icon-youtube></b-icon-youtube>
       <b-icon-twitter></b-icon-twitter>
     </div>
-    <Footer />
   </div>
 </template>
 
