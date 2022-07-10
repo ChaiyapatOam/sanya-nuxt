@@ -13,29 +13,43 @@
     </div>
     <!-- Jumbotron -->
     <div class="mybox">
-      <b-card-group deck
-        ><nuxt-link to="/login">
-          <b-card class="mybox">
-            <b-card-text
-              ><h4>
-                I am a client <br />
-                ฉันเป็นผู้ใช้บริการ
-              </h4></b-card-text
-            >
-          </b-card></nuxt-link
-        >
+      <b-card-group deck>
+        <!-- <b-card class="mybox">
+          <b-card-text
+            ><h4>
+              I am a client <br />
+              ฉันเป็นผู้ใช้บริการ
+            </h4></b-card-text
+          >
+        </b-card> -->
+        <nuxt-link to="/login" class="card">
+          <div class="card-body">
+            <h4>
+              I am a client <br />
+              ฉันเป็นผู้ใช้บริการ
+            </h4>
+          </div>
+        </nuxt-link>
+        <nuxt-link to="/login" class="card">
+          <div class="card-body">
+            <h4>
+              I am a legal freelancer <br />
+              ฉันเป็นฟรีแลนซ์ด้านกฎหมาย
+            </h4>
+          </div>
+        </nuxt-link>
 
-        <b-card >
+        <!-- <b-card>
           <b-card-text
             ><h4>
               I am a legal freelancer <br />
               ฉันเป็นฟรีแลนซ์ด้านกฎหมาย
             </h4></b-card-text
           >
-        </b-card>
+        </b-card> -->
       </b-card-group>
     </div>
-    <div style="font-size: 30px">
+    <div style="font-size: 30px;color: #1d434c;">
       <b-icon-facebook></b-icon-facebook>
       <b-icon-instagram></b-icon-instagram>
       <b-icon-youtube></b-icon-youtube>
@@ -57,27 +71,22 @@ export default {
 }
 </script>
 <style scoped>
-/* Write Css */
-b-card-group b-card:hover {
-  background-color: aquamarine;
+a.card {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-b-card-group.mybox:hover {
-  background-color: aquamarine;
-}
-div.card {
-  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-div.card:hover {
-  background-color: #1d434c;
-  color: white;
-  cursor: pointer;
-}
+
 div.card-body a {
   text-decoration: none;
   color: #1d434c;
 }
-div.card-body a:hover {
+.card-deck a {
+  color: #1d434c;
+  text-decoration: none;
+}
+.card-deck a:hover {
+  background-color: #1d434c;
   color: white;
+  text-decoration: none;
 }
 
 /* div.card :hover {

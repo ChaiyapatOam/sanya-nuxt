@@ -154,7 +154,9 @@ b-dropdown:hover .dropdown-item {
   display: block;
   margin-top: 0;  
 }
-
+nav {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 li.nav-item a.navlink {
   color: #1d434c;
 }
