@@ -13,17 +13,19 @@
     </div>
     <!-- Jumbotron -->
     <div class="mybox">
-      <b-card-group deck>
-        <b-card class="mybox">
-          <b-card-text
-            ><h4>
-              I am a client <br />
-              ฉันเป็นผู้ใช้บริการ
-            </h4></b-card-text
-          >
-        </b-card>
+      <b-card-group deck
+        ><nuxt-link to="/login">
+          <b-card class="mybox">
+            <b-card-text
+              ><h4>
+                I am a client <br />
+                ฉันเป็นผู้ใช้บริการ
+              </h4></b-card-text
+            >
+          </b-card></nuxt-link
+        >
 
-        <b-card>
+        <b-card >
           <b-card-text
             ><h4>
               I am a legal freelancer <br />
@@ -70,6 +72,14 @@ div.card:hover {
   color: white;
   cursor: pointer;
 }
+div.card-body a {
+  text-decoration: none;
+  color: #1d434c;
+}
+div.card-body a:hover {
+  color: white;
+}
+
 /* div.card :hover {
   color: white;
 
