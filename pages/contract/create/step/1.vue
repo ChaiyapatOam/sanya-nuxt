@@ -72,14 +72,18 @@
 
               <!-- button  -->
               <div class="form-group text-center">
-                <button class="btn btn-primary text-center">หน้า 1/7</button>
+               
+                <p class="" style="margin-top: 25px;">
+                  &nbsp; หน้า 1/7 &nbsp;
+                  <b-icon-arrow-right-circle style="cursor: pointer;font-size: 20px;" />
+                </p>
               </div>
             </form>
           </div>
         </div>
       </div>
     </div>
-    <Footer />
+
   </div>
 </template>
 <script>

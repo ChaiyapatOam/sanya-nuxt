@@ -1,7 +1,6 @@
 <template>
   <!-- Welcome Homepage -->
   <div class="">
-    <Header />
     <!-- Jumbotron -->
     <div class="p-5 bg-info text-white" style="margin-top: 58px">
       <h1 class="mb-3">ฟรี</h1>
@@ -77,19 +76,12 @@
         Sliding: {{ sliding }}
       </p>
     </div>
-    <Footer />
   </div>
 </template>
 
 <script>
-import Footer from '~/components/Footer.vue'
-import Header from '~/components/Header.vue'
 export default {
   name: 'HomePage',
-  components: {
-    Header,
-    Footer,
-  },
   data() {
     return {
       slide: 0,
@@ -108,10 +100,5 @@ export default {
 </script>
 <style scoped>
 /* Write Css */
-b-card-group b-card:hover {
-  background-color: aquamarine;
-}
-b-card-group.mybox:hover {
-  background-color: aquamarine;
-}
+
 </style>

@@ -5,6 +5,7 @@
     id="NAV"
   >
     <div class="container-fluid">
+      <img src="~/assets/svg/Logo.svg" class="navbar-brand" alt="" style="width: 6.25rem;">
       <h1 class="navbar-brand"><nuxt-link to="/home">Sanya</nuxt-link></h1>
       <button
         class="navbar-toggler"
@@ -75,9 +76,7 @@
               <b-dropdown-item href="#">
                 <b-icon-twitter></b-icon-twitter> Twitter</b-dropdown-item
               >
-              <b-dropdown-item href="#">
-                <b-icon-line></b-icon-line> Line Official</b-dropdown-item
-              >
+              <b-dropdown-item href="#"> Line Official</b-dropdown-item>
             </b-dropdown>
           </li>
 
@@ -135,7 +134,9 @@
 </template>
 
 <script>
-export default {}
+export default {
+  name: 'Header',
+}
 </script>
 
 <style scoped>
