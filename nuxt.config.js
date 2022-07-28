@@ -58,6 +58,7 @@ export default {
     transpile: ['v-calendar'],
   },
   server: {
-    port: '5000',
+    host: '0.0.0.0',
+    port: '6001',
   },
 }
