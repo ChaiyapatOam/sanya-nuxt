@@ -11,7 +11,7 @@
       <!-- <a class="btn btn-primary" href="" role="button">Call to action</a> -->
     </div>
     <!-- Jumbotron -->
-    <div class="mybox">
+    <div class="mybox container mx-auto py-5">
       <b-card-group deck>
         <!-- <b-card class="mybox">
           <b-card-text
@@ -48,7 +48,7 @@
         </b-card> -->
       </b-card-group>
     </div>
-    <div style="font-size: 30px; color: #1d434c">
+    <div style="font-size: 30px; color: #1d434c" class="my-5">
       <b-icon-facebook></b-icon-facebook>
       <b-icon-instagram></b-icon-instagram>
       <b-icon-youtube></b-icon-youtube>
