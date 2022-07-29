@@ -4,14 +4,14 @@
     <!-- Jumbotron -->
     <div
       class="p-5 text-center bg-light"
-      style="margin-top: 58px; color: #1d434c"
+      style="color: #1d434c"
     >
       <h1 class="mb-3">Welcome</h1>
       <h2 class="mb-3">สวัสดีครับ...</h2>
       <!-- <a class="btn btn-primary" href="" role="button">Call to action</a> -->
     </div>
     <!-- Jumbotron -->
-    <div class="mybox">
+    <div class="mybox container mx-auto py-5">
       <b-card-group deck>
         <!-- <b-card class="mybox">
           <b-card-text
@@ -23,7 +23,7 @@
         </b-card> -->
         <nuxt-link to="/login" class="card">
           <div class="card-body">
-            <h4>
+            <h4 class="font-weight-light">
               I am a client <br />
               ฉันเป็นผู้ใช้บริการ
             </h4>
@@ -31,7 +31,7 @@
         </nuxt-link>
         <nuxt-link to="/login" class="card">
           <div class="card-body">
-            <h4>
+            <h4 class="font-weight-light">
               I am a legal freelancer <br />
               ฉันเป็นฟรีแลนซ์ด้านกฎหมาย
             </h4>
@@ -48,7 +48,7 @@
         </b-card> -->
       </b-card-group>
     </div>
-    <div style="font-size: 30px; color: #1d434c">
+    <div style="font-size: 30px; color: #1d434c" class="my-5">
       <b-icon-facebook></b-icon-facebook>
       <b-icon-instagram></b-icon-instagram>
       <b-icon-youtube></b-icon-youtube>

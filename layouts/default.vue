@@ -1,7 +1,7 @@
 <template>
-  <div style="position: relative; min-height: 100vh" class="app">
+  <div class="app">
     <Header />
-    <nuxt />
+    <nuxt id="nuxt-content" />
     <Footer />
   </div>
 </template>
@@ -10,5 +10,14 @@
 <style>
 .app {
   font-family: 'Mitr',sans-serif;
+
+  min-height: 100vh;
+
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+#nuxt-content {
+  margin-top: 6.5rem;
 }
 </style>
