@@ -83,9 +83,11 @@
       <!-- Right Side -->
       <div class="float-right" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <!-- <li class="nav-item">
-            <b-button pill variant="outline-info" style="width: max-content">เข้าสู่ระบบ</b-button>
-          </li> -->
+          <nuxt-link to="/login">
+            <li class="nav-item">
+              <b-button pill variant="outline-info" style="width: max-content">เข้าสู่ระบบ</b-button>
+            </li>
+          </nuxt-link>
           <li class="nav-item" style="width: max-content">
             <div class="nav-link">
               <b-avatar src="https://picsum.photos/125/125/?image=40" rounded="circle"></b-avatar>

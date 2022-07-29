@@ -1,7 +1,7 @@
 <template>
   <div class="app">
     <Header />
-    <nuxt id="nuxt-content"/>
+    <nuxt id="nuxt-content" />
     <Footer />
   </div>
 </template>
@@ -18,6 +18,6 @@
 }
 
 #nuxt-content {
-  margin-top: 3rem;
+  margin-top: 6.5rem;
 }
 </style>

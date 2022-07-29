@@ -4,7 +4,7 @@
     <!-- Jumbotron -->
     <div
       class="p-5 text-center bg-light"
-      style="margin-top: 58px; color: #1d434c"
+      style="color: #1d434c"
     >
       <h1 class="mb-3">Welcome</h1>
       <h2 class="mb-3">สวัสดีครับ...</h2>
@@ -23,7 +23,7 @@
         </b-card> -->
         <nuxt-link to="/login" class="card">
           <div class="card-body">
-            <h4>
+            <h4 class="font-weight-light">
               I am a client <br />
               ฉันเป็นผู้ใช้บริการ
             </h4>
@@ -31,7 +31,7 @@
         </nuxt-link>
         <nuxt-link to="/login" class="card">
           <div class="card-body">
-            <h4>
+            <h4 class="font-weight-light">
               I am a legal freelancer <br />
               ฉันเป็นฟรีแลนซ์ด้านกฎหมาย
             </h4>
