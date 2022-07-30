@@ -1,13 +1,36 @@
 <template>
   <div>
-
     <div class="row min-h">
       <div class="col-xl bg-info container mx-auto center text-white">
-        เข้าสู่ระบบ
+        <h1>เข้าสู่ระบบ</h1>
       </div>
 
-      <div class="col-xl">
+      <div class="col-xl bg-white container mx-auto center text-primary">
+        <div class="flex-center">
+          <h4>เข้าสู่ระบบ</h4>
+          <form @submit.prevent="handleSubmit" class="auth-form">
 
+            <div class="form-group">
+              <label for="username">ชื่อผู้ใช้</label>
+              <input type="text" id="username" class="form-control" required v-model="username">
+            </div>
+
+            <div class="form-group">
+              <label for="password">รหัสผ่าน</label>
+              <input type="password" id="password" class="form-control" required v-model="password">
+            </div>
+
+            <div class="form-check font-weight-light">
+              <input type="checkbox" id="remember-me">
+              <label for="remember-me" class="form-check-label">จดจำการเข้าสู่ระบบ</label>
+            </div>
+
+            <div class="flex">
+              <button type="submit" class="btn btn-primary">เข้าสู่ระบบ</button>
+              <button class="btn btn-secondary">ลืมรหัสผ่าน</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
 
@@ -25,6 +48,22 @@
   </div>
 </template>
 
+<script>
+export default {
+  name: 'Login',
+  data: () => ({
+    username: '',
+    password: ''
+  }),
+  methods: {
+    handleSubmit: () => {
+
+    }
+  }
+}
+</script>
+
+
 <style scoped>
 .min-h {
   min-height: calc(100vh - 6.5rem);
@@ -33,5 +72,21 @@
 .center {
   display: grid;
   place-items: center;
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  gap: 1rem;
 }
 </style>
