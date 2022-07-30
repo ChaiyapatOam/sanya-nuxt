@@ -1,10 +1,17 @@
 <template>
   <!-- /?lang=th -->
-  <nav class="navbar navbar-expand-md navbar-light bg-light text-darkgreen fixed-top" id="NAV">
+  <nav
+    class="navbar navbar-expand-md navbar-light bg-light text-darkgreen fixed-top"
+    id="NAV"
+  >
     <div class="container wrapper mx-auto">
-
       <nuxt-link to="/home">
-        <img src="~/assets/svg/Logo.svg" class="navbar-brand" alt="" style="width: 4rem;">
+        <img
+          src="~/assets/svg/Logo.svg"
+          class="navbar-brand"
+          alt=""
+          style="width: 4rem"
+        />
       </nuxt-link>
 
       <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
@@ -15,14 +22,24 @@
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <!-- บริการ -->
           <li>
-            <b-dropdown variant="link" toggle-class="text-decoration-none" class="text-teal">
+            <b-dropdown
+              variant="link"
+              toggle-class="text-decoration-none"
+              class="text-teal"
+            >
               <template #button-content>
-                <span class="text-teal">บริการ</span></template>
+                <span class="text-teal">บริการ</span></template
+              >
               <b-dropdown-item href="#" class="item">
-                <nuxt-link to="/contract/all" class="disable">สัญญาสำเร็จรูป</nuxt-link>
+                <nuxt-link to="/contract/all" class="disable"
+                  >สัญญาสำเร็จรูป</nuxt-link
+                >
               </b-dropdown-item>
-              <b-dropdown-item href="#">ค้นหาฟรีแลนซ์ด้านกฎหมาย</b-dropdown-item>
-              <b-dropdown-item href="#" disabled>legal encyclopedia <br />
+              <b-dropdown-item href="#"
+                >ค้นหาฟรีแลนซ์ด้านกฎหมาย</b-dropdown-item
+              >
+              <b-dropdown-item href="#" disabled
+                >legal encyclopedia <br />
                 <sub>(Comming Soon)</sub>
               </b-dropdown-item>
             </b-dropdown>
@@ -67,8 +84,12 @@
           <li>
             <b-dropdown variant="link" toggle-class="text-decoration-none">
               <template #button-content> ช่วยเหลือ </template>
-              <b-dropdown-item href="#">วิธีใช้บริการสัญญาสำเร็จรูป</b-dropdown-item>
-              <b-dropdown-item href="#">วิธีการใช้บริการฟรีแลนซ์</b-dropdown-item>
+              <b-dropdown-item href="#"
+                >วิธีใช้บริการสัญญาสำเร็จรูป</b-dropdown-item
+              >
+              <b-dropdown-item href="#"
+                >วิธีการใช้บริการฟรีแลนซ์</b-dropdown-item
+              >
               <b-dropdown-item href="#">คำถามที่พบบ่อย</b-dropdown-item>
               <b-dropdown-item href="#">คุยกับแอดมิน</b-dropdown-item>
             </b-dropdown>
@@ -85,12 +106,17 @@
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <nuxt-link to="/login">
             <li class="nav-item">
-              <b-button pill variant="outline-info" style="width: max-content">เข้าสู่ระบบ</b-button>
+              <b-button pill variant="outline-info" style="width: max-content"
+                >เข้าสู่ระบบ</b-button
+              >
             </li>
           </nuxt-link>
           <li class="nav-item" style="width: max-content">
             <div class="nav-link">
-              <b-avatar src="https://picsum.photos/125/125/?image=40" rounded="circle"></b-avatar>
+              <b-avatar
+                src="https://picsum.photos/125/125/?image=40"
+                rounded="circle"
+              ></b-avatar>
               Username
             </div>
           </li>
