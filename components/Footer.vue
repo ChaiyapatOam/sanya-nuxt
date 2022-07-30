@@ -24,8 +24,13 @@
               กรุงเทพมหานคร
             </p>
             <p>(+66) 64-290-4111 <br>
+
               ทุกวัน 9.00- 18.00 น.</p>
             <p>sanya@lawsuit@gmail.com</p>
+
+            ทุกวัน 9.00- 18.00 น.</p>
+            <p>sanya.lawsuit@gmail.com</p>
+
           </div>
           <!-- Grid column -->
 
