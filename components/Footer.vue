@@ -11,18 +11,20 @@
         <!-- Grid row -->
         <div class="row mt-3">
           <!-- Grid column -->
-          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 font-weight-light text-left">
             <!-- Content -->
             <!-- <h6 class="text-uppercase fw-bold mb-4">
               Company name
             </h6> -->
             <p>
-             บริษัท มิตรสัญญา จำกัด (สำนักงานใหญ่) เลขที่ 2074/81
-             ซอย เจริญกรุง แขวงวัดพระยาไกล เขตบางคอเหลมอ
-             กรุงเทพมหานคร
+              บริษัท มิตรสัญญา จำกัด (สำนักงานใหญ่)
+              เลขที่ 2074/81
+              ซอย เจริญกรุง
+              แขวงวัดพระยาไกล เขตบางคอเหลมอ
+              กรุงเทพมหานคร
             </p>
             <p>(+66) 64-290-4111 <br>
-            ทุกวัน 9.00- 18.00 น.</p>
+              ทุกวัน 9.00- 18.00 น.</p>
             <p>sanya@lawsuit@gmail.com</p>
           </div>
           <!-- Grid column -->
@@ -43,13 +45,13 @@
           <!-- Grid column -->
 
           <!-- Grid column -->
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 text-right">
             <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-            <p>คำถามที่พบบ่อย</p>
-            <p>ข้อกำหนดเงื่อนไข</p>
-            <p>นโยบายคุ้มครองส่วนบุคคล</p>
-            <p>ตั้งค่าคุกกี้</p>
+            <img src="~/assets/svg/Logo-white.svg" class="navbar-brand mb-4" style="width: 4rem;">
+            <p class="font-weight-light">คำถามที่พบบ่อย</p>
+            <p class="font-weight-light">ข้อกำหนดเงื่อนไข</p>
+            <p class="font-weight-light">นโยบายคุ้มครองส่วนบุคคล</p>
+            <p class="font-weight-light">ตั้งค่าคุกกี้</p>
           </div>
           <!-- Grid column -->
         </div>
@@ -88,7 +90,7 @@ export default {
 
 <style scoped>
 footer {
-  
+
   background-color: #1d434c;
 }
 </style>
