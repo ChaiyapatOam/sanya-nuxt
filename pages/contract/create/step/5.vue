@@ -5,7 +5,7 @@
       <div class="row">
         <div class="col-sm-8 offset-sm-2">
           <div>
-            <p>สร้างร้านค้าของคุณ</p>
+            <p></p>
             <form @submit.prevent="handleSubmit">
               <p>ราคาที่ดิน</p>
               <div class="form-group">
@@ -69,10 +69,7 @@
                 ></b-form-checkbox-group>
               </div>
 
-              <!-- button  -->
-              <div class="form-group text-center">
-                <button class="btn btn-primary text-center">หน้า 5/7</button>
-              </div>
+              <Step :page="5" />
             </form>
           </div>
         </div>
@@ -84,12 +81,14 @@
 <script>
 import Footer from '~/components/Footer.vue'
 import Header from '~/components/Header.vue'
+import Step from '~/components/Step.vue'
 
 export default {
   name: 'Profile',
   components: {
     Header,
     Footer,
+    Step,
   },
   data() {
     return {

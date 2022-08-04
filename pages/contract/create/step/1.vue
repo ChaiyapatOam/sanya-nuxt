@@ -1,11 +1,10 @@
 <template>
   <div>
-    <Header />
-    <div class="jumbotron">
+    <div class="">
       <div class="row">
         <div class="col-sm-8 offset-sm-2">
           <div>
-            <h2 class="text-center">สร้างร้านค้าของคุณ</h2>
+            <!-- <h2 class="text-center">สร้างร้านค้าของคุณ</h2> -->
             <form @submit.prevent="handleSubmit">
               <div class="form-group">
                 <label for="store">เลือกโปรไฟล์ที่ต้องการทำสัญญา</label>
@@ -70,12 +69,15 @@
                 </b-input-group>
               </div>
 
-              <!-- button  -->
+              <!-- Page  -->
               <div class="form-group text-center">
-               
-                <p class="" style="margin-top: 25px;">
+                <p class="" style="margin-top: 25px">
                   &nbsp; หน้า 1/7 &nbsp;
-                  <b-icon-arrow-right-circle style="cursor: pointer;font-size: 20px;" />
+                  <nuxt-link to="/contract/create/step/2">
+                    <b-icon-arrow-right-circle-fill
+                      style="cursor: pointer; font-size: 22px"
+                    ></b-icon-arrow-right-circle-fill>
+                  </nuxt-link>
                 </p>
               </div>
             </form>
@@ -83,19 +85,10 @@
         </div>
       </div>
     </div>
-
   </div>
 </template>
 <script>
-import Footer from '~/components/Footer.vue'
-import Header from '~/components/Header.vue'
-
 export default {
-  name: 'Profile',
-  components: {
-    Header,
-    Footer,
-  },
   data() {
     return {
       user: {
@@ -107,8 +100,14 @@ export default {
         address: '',
       },
       submitted: false,
-      date:''
+      date: '',
     }
+  },
+  methods: {
+    NextPage() {},
   },
 }
 </script>
+<style scoped>
+
+</style>

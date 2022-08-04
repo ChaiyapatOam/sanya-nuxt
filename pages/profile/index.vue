@@ -4,21 +4,24 @@
     <Header />
     <!-- Jumbotron -->
     <div class="p-5 bg-light row" style="margin-top: 58px">
-      <b-img src="https://picsum.photos/125/125/?image=58" rounded="circle"></b-img>
-      <h1 class="mb-3">Welcome</h1>
-      <h2 class="mb-3">สวัสดีครับ...</h2>
-      <b-btn class="primary" pill>แก้ไขโปรไฟล์</b-btn>
+      <b-img
+        src="https://picsum.photos/125/125/?image=58"
+        rounded="circle"
+      ></b-img>
+      <h2 class="mb-3">ชื่อ-นามสกุล</h2>
+
+
       <!-- <a class="btn btn-primary" href="" role="button">Call to action</a> -->
     </div>
     <!-- Jumbotron -->
 
     <!-- Bio -->
     <div class="container text-center">
-        <div class="">
-            <h4>การศึกษา : </h4>
-            <h4>อาศัยอยู่ที่ : </h4>
-            <h4>จาก : </h4>
-        </div>
+      <div class="">
+        <h4>การศึกษา :</h4>
+        <h4>อาศัยอยู่ที่ :</h4>
+        <h4>จาก :</h4>
+      </div>
     </div>
 
     <Footer />

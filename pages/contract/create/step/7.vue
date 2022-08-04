@@ -1,24 +1,15 @@
 <template>
   <div>
-    <Header />
     <div class="jumbotron">
       <div class="row">
         <div class="col-sm-8 offset-sm-2">
           <div>
-            <p>สร้างร้านค้าของคุณ</p>
+            <p></p>
             <form @submit.prevent="handleSubmit">
               <p>ข้อสัญญาเพิ่มเติมอื่นๆ (ุถ้ามี)</p>
 
               <!-- ผู้รับผิดชอบค่าธรรมเนียมการโอน -->
               <div class="form-group">
-                <b-form-select
-                  v-model="selected"
-                  :options="options"
-                  class="mb-3"
-                  value-field="item"
-                  text-field="name"
-                  disabled-field="notEnabled"
-                ></b-form-select>
                 <b-form-checkbox
                   v-model="selected"
                   :aria-describedby="ariaDescribedby"
@@ -43,18 +34,28 @@
                 <p>- เพิ่มความมั่นใจ</p>
                 <p>- ตรวจสอบความถูกต้องของสัญญา</p>
                 <p>- พูดคุยและขอคำปรึกษาได้อย่างใกล้ชิด</p>
-                <b-form-checkbox id="checkbox-group-1" v-model="selected">
-                  บริการเพิ่มเติมนัดปรึกษากับทางผู้เชี่ยวชาญ เป็นเวลา 30
-                  นาที</b-form-checkbox
-                >
+                <div class="check">
+                  <b-form-checkbox id="checkbox-group-1" v-model="selected">
+                    บริการเพิ่มเติมนัดปรึกษากับทางผู้เชี่ยวชาญ <br />
+                    เป็นเวลา 30 นาที</b-form-checkbox
+                  >
+                  <p class="text-danger">300 บาท</p>
+                </div>
               </div>
 
               <!-- button  -->
               <div class="form-group text-center">
-                <b-btn pill style="background-color: #1d434c" class="text-white">เสร็จสิ้น</b-btn> <br>
-                <p class="" style="margin-top: 25px;">
-                  <b-icon-arrow-left-circle />&nbsp; หน้า 7/7 &nbsp;
-                  <b-icon-arrow-right-circle />
+                <b-btn pill style="background-color: #1d434c" class="text-white"
+                  >เสร็จสิ้น</b-btn
+                >
+                <br />
+                <p class="" style="margin-top: 25px">
+                  <nuxt-link to="/contract/create/step/6">
+                    <b-icon-arrow-left-circle-fill
+                      style="cursor: pointer; font-size: 22px"
+                    ></b-icon-arrow-left-circle-fill>
+                  </nuxt-link>
+                  &nbsp; หน้า 7/7 &nbsp;
                 </p>
               </div>
             </form>
@@ -62,19 +63,11 @@
         </div>
       </div>
     </div>
-    <Footer />
   </div>
 </template>
 <script>
-import Footer from '~/components/Footer.vue'
-import Header from '~/components/Header.vue'
-
 export default {
   name: 'Profile',
-  components: {
-    Header,
-    Footer,
-  },
   data() {
     return {
       user: {
@@ -102,3 +95,10 @@ export default {
   },
 }
 </script>
+<style scoped>
+div.check {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+</style>

@@ -1,11 +1,10 @@
 <template>
   <div>
-    <Header />
     <div class="jumbotron">
       <div class="row">
         <div class="col-sm-8 offset-sm-2">
           <div>
-            <h2 class="text-center">สร้างร้านค้าของคุณ</h2>
+            <h2 class="text-center"></h2>
             <form @submit.prevent="handleSubmit">
               <div class="form-group">
                 <label for="store">ผู้จะขาย</label>
@@ -18,7 +17,6 @@
                   class="form-control"
                   :class="{ 'is-invalid': submitted && $v.user.store.$error }"
                 />
-
               </div>
 
               <!-- เลขประจำตัวประชาชนผู้ขาย -->
@@ -35,7 +33,6 @@
                     'is-invalid': submitted && $v.user.address.$error,
                   }"
                 />
-
               </div>
               <!-- อายุ -->
               <div class="form-group">
@@ -51,7 +48,6 @@
                     'is-invalid': submitted && $v.user.address.$error,
                   }"
                 />
-
               </div>
 
               <!-- ที่อยู่ผู้จะขาย -->
@@ -68,32 +64,28 @@
                     'is-invalid': submitted && $v.user.address.$error,
                   }"
                 />
-
               </div>
 
-
-
-              <!-- button  -->
-              <div class="form-group text-center">
-                <button class="btn btn-primary text-center">หน้า 2/7</button>
-              </div>
+              <!-- Step Page  -->
+              <Step :page="2" />
             </form>
           </div>
         </div>
       </div>
     </div>
-
   </div>
 </template>
 <script>
 import Footer from '~/components/Footer.vue'
 import Header from '~/components/Header.vue'
+import Step from '~/components/Step.vue'
 
 export default {
   name: 'Profile',
   components: {
     Header,
     Footer,
+    Step,
   },
   data() {
     return {
@@ -106,7 +98,7 @@ export default {
         address: '',
       },
       submitted: false,
-      date:''
+      date: '',
     }
   },
 }

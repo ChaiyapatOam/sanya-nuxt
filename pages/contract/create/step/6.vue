@@ -5,7 +5,7 @@
       <div class="row">
         <div class="col-sm-8 offset-sm-2">
           <div>
-            <p>สร้างร้านค้าของคุณ</p>
+            <p></p>
             <form @submit.prevent="handleSubmit">
               <p>
                 ใครเป็นผู้รับผิดชอบในค่าธรรมเนียมโอน อากรแสตมป์
@@ -26,7 +26,10 @@
 
               <!-- checkbox -->
               <div class="form-group">
-                <label for="check">ในระหว่างการจ่ายเงินค่าซื้อที่ดิน ผู้จะขายมีการทำสัญญาเช่ากับบุคคลใดๆหรือไม่</label>
+                <label for="check"
+                  >ในระหว่างการจ่ายเงินค่าซื้อที่ดิน
+                  ผู้จะขายมีการทำสัญญาเช่ากับบุคคลใดๆหรือไม่</label
+                >
                 <b-form-checkbox-group
                   id="checkbox-group-1"
                   v-model="selected"
@@ -36,10 +39,7 @@
                 ></b-form-checkbox-group>
               </div>
 
-              <!-- button  -->
-              <div class="form-group text-center">
-                <button class="btn btn-primary text-center">หน้า 6/7</button>
-              </div>
+              <Step :page="6" />
             </form>
           </div>
         </div>
@@ -51,12 +51,14 @@
 <script>
 import Footer from '~/components/Footer.vue'
 import Header from '~/components/Header.vue'
+import Step from '~/components/Step.vue'
 
 export default {
   name: 'Profile',
   components: {
     Header,
     Footer,
+    Step,
   },
   data() {
     return {

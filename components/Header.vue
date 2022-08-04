@@ -1,7 +1,7 @@
 <template>
   <!-- /?lang=th -->
   <nav
-    class="navbar navbar-expand-md navbar-light bg-light text-darkgreen fixed-top"
+    class="navbar navbar-expand-md navbar-light bg-light text-info fixed-top"
     id="NAV"
   >
     <div class="container wrapper mx-auto">
@@ -22,14 +22,8 @@
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <!-- บริการ -->
           <li>
-            <b-dropdown
-              variant="link"
-              toggle-class="text-decoration-none"
-              class="text-teal"
-            >
-              <template #button-content>
-                <span class="text-teal">บริการ</span></template
-              >
+            <b-dropdown variant="link" toggle-class="text-decoration-none">
+              <template #button-content> <span>บริการ</span></template>
               <b-dropdown-item href="#" class="item">
                 <nuxt-link to="/contract/all" class="disable"
                   >สัญญาสำเร็จรูป</nuxt-link
@@ -57,25 +51,32 @@
           <li>
             <b-dropdown variant="link" toggle-class="text-decoration-none">
               <template #button-content> ติดต่อเรา </template>
+              
               <b-dropdown-item href="#">
                 <b-icon-inbox></b-icon-inbox> ติดต่อเรา
               </b-dropdown-item>
+
               <b-dropdown-item href="https://www.facebook.com/" target="_blank">
                 <b-icon-facebook></b-icon-facebook> Facebook
               </b-dropdown-item>
+
               <b-dropdown-item href="#">
                 <b-icon-instagram></b-icon-instagram>
                 Instagram
               </b-dropdown-item>
+
               <b-dropdown-item href="https://www.youtube.com/">
                 <b-icon-youtube></b-icon-youtube> Youtube
               </b-dropdown-item>
+
               <b-dropdown-item href="#">
                 <b-icon-linkedin></b-icon-linkedin> Linkedin
               </b-dropdown-item>
+
               <b-dropdown-item href="#">
                 <b-icon-twitter></b-icon-twitter> Twitter
               </b-dropdown-item>
+
               <b-dropdown-item href="#"> Line Official</b-dropdown-item>
             </b-dropdown>
           </li>
@@ -90,7 +91,9 @@
               <b-dropdown-item href="#"
                 >วิธีการใช้บริการฟรีแลนซ์</b-dropdown-item
               >
-              <b-dropdown-item href="#">คำถามที่พบบ่อย</b-dropdown-item>
+              <b-dropdown-item>
+                <nuxt-link to="/q-a">คำถามที่พบบ่อย</nuxt-link>
+              </b-dropdown-item>
               <b-dropdown-item href="#">คุยกับแอดมิน</b-dropdown-item>
             </b-dropdown>
           </li>
@@ -103,6 +106,7 @@
 
       <!-- Right Side -->
       <div class="float-right" id="navbarCollapse">
+        <!-- Login -->
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <nuxt-link to="/login">
             <li class="nav-item">
@@ -111,13 +115,30 @@
               >
             </li>
           </nuxt-link>
+
+          <!-- User -->
           <li class="nav-item" style="width: max-content">
-            <div class="nav-link">
-              <b-avatar
-                src="https://picsum.photos/125/125/?image=40"
-                rounded="circle"
-              ></b-avatar>
-              Username
+            <div class="nav-link dropdown">
+              <button
+                class="btn outline-primary dropdown-toggle rounded-pill"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <b-avatar
+                  src="https://picsum.photos/125/125/?image=40"
+                  rounded="circle"
+                ></b-avatar>
+                Username
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">บัญชี</a>
+                <a class="dropdown-item" href="/profile">โปรไฟล์ของฉัน</a>
+                <a class="dropdown-item" href="#">กระเป๋าของฉัน</a>
+                <a class="dropdown-item" href="#">รายการสินค้าของฉัน</a>
+              </div>
             </div>
           </li>
 
@@ -210,5 +231,13 @@ li a.nav-link {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown > .dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+  pointer-events: none;
 }
 </style>

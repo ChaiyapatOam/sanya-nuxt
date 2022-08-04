@@ -2,14 +2,12 @@
   <!-- Welcome -->
   <div class="text-center">
     <!-- Jumbotron -->
-    <div
-      class="p-5 text-center bg-light"
-      style="color: #1d434c"
-    >
+    <div class="p-5 text-center text-info">
       <h1 class="mb-3">Welcome</h1>
       <h2 class="mb-3">สวัสดีครับ...</h2>
-      <!-- <a class="btn btn-primary" href="" role="button">Call to action</a> -->
+
     </div>
+
     <!-- Jumbotron -->
     <div class="mybox container mx-auto py-5">
       <b-card-group deck>
@@ -38,14 +36,6 @@
           </div>
         </nuxt-link>
 
-        <!-- <b-card>
-          <b-card-text
-            ><h4>
-              I am a legal freelancer <br />
-              ฉันเป็นฟรีแลนซ์ด้านกฎหมาย
-            </h4></b-card-text
-          >
-        </b-card> -->
       </b-card-group>
     </div>
     <div style="font-size: 30px; color: #1d434c" class="my-5">

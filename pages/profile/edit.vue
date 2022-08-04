@@ -1,9 +1,8 @@
 <template>
   <!-- Welcome -->
   <div class="text-center">
-    <Header />
     <!-- Jumbotron -->
-    <div class="p-5 text-center bg-light" style="margin-top: 58px">
+    <div class="p-5 text-center bg-primary" style="margin-top: 58px">
       <b-img
         src="https://picsum.photos/125/125/?image=58"
         rounded="circle"
@@ -50,8 +49,8 @@
             :options="gender"
             required
           ></b-form-select>
-          <v-date-picker v-model="date"  />
-          <v-date-picker v-model="date" :masks="masks" ref="picker" />
+          <!-- <v-date-picker v-model="date"  />
+          <v-date-picker v-model="date" :masks="masks" ref="picker" /> -->
         </b-form-group>
 
         <b-form-group id="input-group-4" v-slot="{ ariaDescribedby }">

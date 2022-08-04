@@ -9,24 +9,7 @@
     <div>
       สัญญาสำเร็จรูป
       <h3 class="text-center">HOW TO</h3>
-      <h3 class="text-center">HOW TO</h3>
-      <h3 class="text-center">HOW TO</h3>
-      <h3 class="text-center">HOW TO</h3>
-      <h3 class="text-center">HOW TO</h3>
-      <h3 class="text-center">HOW TO</h3>
-      <h3 class="text-center">HOW TO</h3>
-      <h3 class="text-center">HOW TO</h3>
-      <h3 class="text-center">HOW TO</h3>
-      <h3 class="text-center">HOW TO</h3>
-      <h3 class="text-center">HOW TO</h3>
-      <h3 class="text-center">HOW TO</h3>
-      <h3 class="text-center">HOW TO</h3>
-      <h3 class="text-center">HOW TO</h3>
-      <h3 class="text-center">HOW TO</h3>
-      <h3 class="text-center">HOW TO</h3>
-      <h3 class="text-center">HOW TO</h3>
-      <h3 class="text-center">HOW TO</h3>
-      <h3 class="text-center">HOW TO</h3>
+    
     </div>
   </div>
 </template>

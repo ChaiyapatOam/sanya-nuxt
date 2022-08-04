@@ -7,27 +7,44 @@
 
       <div class="col-xl bg-white container mx-auto center text-primary">
         <div class="flex-center">
-          <h4>เข้าสู่ระบบ</h4>
+          <h4>ลงชื่อเข้าสู่ระบบ</h4>
           <form @submit.prevent="handleSubmit" class="auth-form">
-
             <div class="form-group">
-              <label for="username">ชื่อผู้ใช้</label>
-              <input type="text" id="username" class="form-control" required v-model="username">
+              <label for="username">ชื่อบัญชี</label>
+              <input
+                type="text"
+                id="username"
+                class="form-control"
+                required
+                v-model="username"
+              />
             </div>
 
             <div class="form-group">
               <label for="password">รหัสผ่าน</label>
-              <input type="password" id="password" class="form-control" required v-model="password">
+              <input
+                type="password"
+                id="password"
+                class="form-control"
+                required
+                v-model="password"
+              />
             </div>
 
             <div class="form-check font-weight-light">
-              <input type="checkbox" id="remember-me">
-              <label for="remember-me" class="form-check-label">จดจำการเข้าสู่ระบบ</label>
+              <input type="checkbox" id="remember-me" />
+              <label for="remember-me" class="form-check-label"
+                >จดจำการเข้าสู่ระบบ</label
+              >
             </div>
 
             <div class="flex">
-              <button type="submit" class="btn btn-primary">เข้าสู่ระบบ</button>
+              <button type="submit" class="btn btn-primary rounded-pill">เข้าสู่ระบบ</button>
               <button class="btn btn-secondary">ลืมรหัสผ่าน</button>
+              <p>
+                หากคุณยังไม่เป็นสมาชิก
+                <nuxt-link to="/register">สมัครสมาชิก</nuxt-link>
+              </p>
             </div>
           </form>
         </div>
@@ -53,16 +70,13 @@ export default {
   name: 'Login',
   data: () => ({
     username: '',
-    password: ''
+    password: '',
   }),
   methods: {
-    handleSubmit: () => {
-
-    }
-  }
+    handleSubmit: () => {},
+  },
 }
 </script>
-
 
 <style scoped>
 .min-h {
@@ -88,5 +102,8 @@ export default {
   justify-items: center;
   align-items: center;
   gap: 1rem;
+}
+nuxt-link {
+  color: blue;
 }
 </style>

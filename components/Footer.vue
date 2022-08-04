@@ -11,48 +11,49 @@
         <!-- Grid row -->
         <div class="row mt-3">
           <!-- Grid column -->
-          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 font-weight-light text-left">
+          <div
+            class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 font-weight-light text-left"
+          >
             <!-- Content -->
             <!-- <h6 class="text-uppercase fw-bold mb-4">
               Company name
             </h6> -->
             <p>
-              บริษัท มิตรสัญญา จำกัด (สำนักงานใหญ่)
-              เลขที่ 2074/81
-              ซอย เจริญกรุง
-              แขวงวัดพระยาไกล เขตบางคอเหลมอ
-              กรุงเทพมหานคร
+              บริษัท มิตรสัญญา จำกัด (สำนักงานใหญ่) เลขที่ 2074/81 ซอย เจริญกรุง
+              แขวงวัดพระยาไกล เขตบางคอเหลมอ กรุงเทพมหานคร
             </p>
-            <p>(+66) 64-290-4111 <br>
+            <p>
+              (+66) 64-290-4111 <br />
 
-              ทุกวัน 9.00- 18.00 น.</p>
-            <p>sanya@lawsuit@gmail.com</p>
-
-            ทุกวัน 9.00- 18.00 น.</p>
+              ทุกวัน 9.00- 18.00 น.
+            </p>
             <p>sanya.lawsuit@gmail.com</p>
-
           </div>
           <!-- Grid column -->
 
           <!-- Grid column -->
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
+          <div
+            class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4"
+            style="font-size: 24px"
+          >
             <h6 class="text-uppercase fw-bold mb-4">ช่องทางการติดตาม</h6>
             <b-icon-facebook><a href=""></a></b-icon-facebook>
             <b-icon-instagram></b-icon-instagram>
             <b-icon-youtube></b-icon-youtube>
             <b-icon-twitter></b-icon-twitter>
-
-            <!--  <p>
-              <a href="#!" class="text-reset">Help</a>
-            </p> -->
           </div>
           <!-- Grid column -->
 
           <!-- Grid column -->
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 text-right">
+          <div
+            class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 text-right"
+          >
             <!-- Links -->
-            <img src="~/assets/svg/Logo-white.svg" class="navbar-brand mb-4" style="width: 4rem;">
+            <img
+              src="~/assets/svg/Logo-white.svg"
+              class="navbar-brand mb-4"
+              style="width: 4rem"
+            />
             <p class="font-weight-light">คำถามที่พบบ่อย</p>
             <p class="font-weight-light">ข้อกำหนดเงื่อนไข</p>
             <p class="font-weight-light">นโยบายคุ้มครองส่วนบุคคล</p>
@@ -95,7 +96,9 @@ export default {
 
 <style scoped>
 footer {
-
-  background-color: #1d434c;
+  background-color: #1a445e;
+}
+nuxt-link {
+  text-decoration: none;
 }
 </style>
