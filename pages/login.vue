@@ -31,21 +31,50 @@
               />
             </div>
 
-            <div class="form-check font-weight-light">
+            <!-- <div class="form-check font-weight-light">
               <input type="checkbox" id="remember-me" />
               <label for="remember-me" class="form-check-label"
                 >จดจำการเข้าสู่ระบบ</label
               >
-            </div>
+            </div> -->
 
-            <div class="flex">
-              <button type="submit" class="btn btn-primary rounded-pill">เข้าสู่ระบบ</button>
-              <button class="btn btn-secondary">ลืมรหัสผ่าน</button>
-              <p>
-                หากคุณยังไม่เป็นสมาชิก
-                <nuxt-link to="/register">สมัครสมาชิก</nuxt-link>
-              </p>
+            <!-- 2 column grid layout -->
+            <div class="row mb-4">
+              <div class="col-md-6 d-flex justify-content-center">
+                <!-- Checkbox -->
+                <div class="form-check mb-3 mb-md-0">
+                  <input
+                    class="form-check-input bg-primary"
+                    type="checkbox"
+                    value=""
+                    id="loginCheck"
+                    checked
+                  />
+                  <label class="form-check-label" for="loginCheck">
+                    จดจำการเข้าสู่ระบบ
+                  </label>
+                </div>
+              </div>
+
+              <div class="col-md-6 d-flex justify-content-center">
+                <!-- Simple link -->
+                <a href="#" class="text-danger">ลืมรหัสผ่าน?</a>
+              </div>
             </div>
+                <p>
+                  หากคุณยังไม่เป็นสมาชิก
+                  <nuxt-link to="/register">สมัครสมาชิก</nuxt-link>
+                </p>
+              <button type="submit" class="btn btn-primary rounded-pill ">
+                เข้าสู่ระบบ
+              </button>
+
+            <!-- <div class="flex">
+              <button type="submit" class="btn btn-primary ">
+                เข้าสู่ระบบ
+              </button>
+              <button class="btn btn-secondary">ลืมรหัสผ่าน</button>
+            </div> -->
           </form>
         </div>
       </div>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header />
+   <Progress/>
     <div class="jumbotron">
       <div class="row">
         <div class="col-sm-8 offset-sm-2">
@@ -145,6 +145,7 @@
 import Footer from '~/components/Footer.vue'
 import Header from '~/components/Header.vue'
 import Step from '~/components/Step.vue'
+import Progress from '~/components/Progress.vue'
 
 export default {
   name: 'Profile',
@@ -152,7 +153,8 @@ export default {
     Header,
     Footer,
     Step,
-  },
+    Progress
+},
   data() {
     return {
       user: {

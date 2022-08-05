@@ -2,7 +2,7 @@
   <!-- Welcome -->
   <div class="text-center">
     <!-- Jumbotron -->
-    <div class="p-5 text-center bg-primary" style="margin-top: 58px">
+    <div class="p-5 text-center bg-primary" >
       <b-img
         src="https://picsum.photos/125/125/?image=58"
         rounded="circle"

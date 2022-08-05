@@ -1,10 +1,10 @@
 <template>
   <div>
-    <div class="">
+    <Progress />
+    <div class="jumbotron">
       <div class="row">
         <div class="col-sm-8 offset-sm-2">
           <div>
-            <!-- <h2 class="text-center">สร้างร้านค้าของคุณ</h2> -->
             <form @submit.prevent="handleSubmit">
               <div class="form-group">
                 <label for="store">เลือกโปรไฟล์ที่ต้องการทำสัญญา</label>
@@ -88,6 +88,7 @@
   </div>
 </template>
 <script>
+import Progress from '~/components/Progress.vue'
 export default {
   data() {
     return {
@@ -106,8 +107,7 @@ export default {
   methods: {
     NextPage() {},
   },
+  components: { Progress },
 }
 </script>
-<style scoped>
-
-</style>
+<style scoped></style>

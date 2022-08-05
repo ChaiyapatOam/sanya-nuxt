@@ -40,11 +40,11 @@
           </li>
 
           <li class="nav-item">
-            <a href="" class="nav-link">ชุมชน</a>
+            <a href="" class="nav-link text-primary">ชุมชน</a>
           </li>
 
           <li class="nav-item">
-            <nuxt-link to="/about" class="nav-link">เกี่ยวกับเรา</nuxt-link>
+            <nuxt-link to="/about" class="nav-link text-primary">เกี่ยวกับเรา</nuxt-link>
           </li>
 
           <!--ติดต่อเรา -->
@@ -99,7 +99,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="" class="nav-link">SANYA ACADEMY</a>
+            <a href="" class="nav-link text-primary">SANYA ACADEMY</a>
           </li>
         </ul>
       </div>
@@ -136,7 +136,7 @@
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <a class="dropdown-item" href="#">บัญชี</a>
                 <a class="dropdown-item" href="/profile">โปรไฟล์ของฉัน</a>
-                <a class="dropdown-item" href="#">กระเป๋าของฉัน</a>
+                <a class="dropdown-item" href="/profile/inventory">กระเป๋าของฉัน</a>
                 <a class="dropdown-item" href="#">รายการสินค้าของฉัน</a>
               </div>
             </div>

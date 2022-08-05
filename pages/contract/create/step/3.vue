@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Progress/>
     <div class="jumbotron">
       <div class="row">
         <div class="col-sm-8 offset-sm-2">
@@ -76,12 +77,14 @@
 <script>
 
 import Step from '~/components/Step.vue'
+import Progress from '~/components/Progress.vue'
 
 export default {
   name: 'Profile',
   components: {
     Step,
-  },
+    Progress
+},
   data() {
     return {
       user: {

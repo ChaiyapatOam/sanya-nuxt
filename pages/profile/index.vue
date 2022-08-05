@@ -1,15 +1,13 @@
 <template>
   <!-- Welcome -->
   <div class="text-center">
-    <Header />
     <!-- Jumbotron -->
-    <div class="p-5 bg-light row" style="margin-top: 58px">
+    <div class="p-5 bg-light row">
       <b-img
         src="https://picsum.photos/125/125/?image=58"
         rounded="circle"
       ></b-img>
       <h2 class="mb-3">ชื่อ-นามสกุล</h2>
-
 
       <!-- <a class="btn btn-primary" href="" role="button">Call to action</a> -->
     </div>
@@ -23,20 +21,13 @@
         <h4>จาก :</h4>
       </div>
     </div>
-
-    <Footer />
   </div>
 </template>
 
 <script>
-import Footer from '~/components/Footer.vue'
-import Header from '~/components/Header.vue'
 export default {
   name: 'Profile',
-  components: {
-    Header,
-    Footer,
-  },
+  components: {},
 }
 </script>
 <style scoped>

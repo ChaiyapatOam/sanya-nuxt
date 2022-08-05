@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Progress/>
     <div class="jumbotron">
       <div class="row">
         <div class="col-sm-8 offset-sm-2">
@@ -45,6 +46,7 @@
 
               <!-- button  -->
               <div class="form-group text-center">
+                <!-- <a href="/profile/inventory" class="btn btn-primay ">เสร็จสิ้น</a> -->
                 <b-btn pill style="background-color: #1d434c" class="text-white"
                   >เสร็จสิ้น</b-btn
                 >
@@ -66,33 +68,35 @@
   </div>
 </template>
 <script>
+import Progress from '~/components/Progress.vue'
 export default {
-  name: 'Profile',
-  data() {
-    return {
-      user: {
-        store: '',
-        email: '',
-        phone: '',
-        password: '',
-        confirmPassword: '',
-        address: '',
-      },
-      submitted: false,
-      date: '',
-      selected: null,
-      options: [
-        { item: null, name: 'ผู้รับผิดชอบค่าธรรมเนียมการโอน' },
-        { item: 'A', name: 'ฝ่ายละเท่าๆกัน' },
-        { item: 'B', name: 'ผู้จะขายเป็นผู้รับผิดชอบ' },
-        { item: 'D', name: 'ผู้จะซื้อเป็นผู้รับผิดชอบ' },
-      ],
-      check: [
-        { text: 'มีการทำสัญญาเช่า', value: true },
-        { text: 'ไม่มีการทำสัญญาเช่า', value: false },
-      ],
-    }
-  },
+    name: "Profile",
+    data() {
+        return {
+            user: {
+                store: "",
+                email: "",
+                phone: "",
+                password: "",
+                confirmPassword: "",
+                address: "",
+            },
+            submitted: false,
+            date: "",
+            selected: null,
+            options: [
+                { item: null, name: "ผู้รับผิดชอบค่าธรรมเนียมการโอน" },
+                { item: "A", name: "ฝ่ายละเท่าๆกัน" },
+                { item: "B", name: "ผู้จะขายเป็นผู้รับผิดชอบ" },
+                { item: "D", name: "ผู้จะซื้อเป็นผู้รับผิดชอบ" },
+            ],
+            check: [
+                { text: "มีการทำสัญญาเช่า", value: true },
+                { text: "ไม่มีการทำสัญญาเช่า", value: false },
+            ],
+        };
+    },
+    components: { Progress }
 }
 </script>
 <style scoped>
