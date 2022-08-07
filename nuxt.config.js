@@ -57,7 +57,7 @@ export default {
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    transpile: ['v-calendar'],
+    transpile: ['v-calendar','vue-document-editor'],
   },
   server: {
     host: '0.0.0.0',

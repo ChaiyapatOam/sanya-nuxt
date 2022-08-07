@@ -72,7 +72,6 @@
         <pre class="m-0">{{ form }}</pre>
       </b-card>
     </div>
-    <Footer />
   </div>
 </template>
 
