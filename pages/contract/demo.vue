@@ -89,7 +89,8 @@
             </div>
 
             <!-- Renter -->
-            <h4>ผู้เช่า</h4>
+            
+            <!-- <h4>ผู้เช่า</h4>
             <div class="form-group">
               <label for="address">เลขประจำตัวประชาชนผู้เช่า</label>
               <input
@@ -121,7 +122,7 @@
                 required
                 v-model="room_rent.renter.address"
               />
-            </div>
+            </div> -->
 
             <!-- <button type="submit" class="btn btn-primary rounded-pill">
               เสร็จสิ้น
@@ -133,7 +134,7 @@
       <div class="col-xl bg-white container mx-auto center text-primary">
         <b-card-group deck>
           <b-card class="mt-3" header="Form Data Result">
-            <pre class="m-0">{{ room_rent }} {{ formatted }}</pre>
+            <pre class="m-0">{{ room_rent }} </pre>
           </b-card>
           <br />
           <b-card class="mt-3" header="สัญญาเช่าห้อง">
@@ -143,14 +144,27 @@
                 ><u>{{ room_rent.create_At }}</u></b
               >
               เมื่อ
-              <b>
+              <b v-if="selected != ''">
                 <u>{{ formatted }}</u>
               </b>
               <br />
               <b>
                 <u>{{ room_rent.owner.name }}</u>
               </b>
-              ซึ่งเป็นผู้ถือบัตรประชาชนเลขที่ {{ room_rent.owner.id }}
+              ซึ่งเป็นผู้ถือบัตรประชาชนเลขที่
+              <b>
+                <u>
+                  {{ room_rent.owner.id }}
+                </u>
+              </b>
+              อายุ
+              <b v-if="room_rent.owner.age > 0"
+                ><u>{{ room_rent.owner.age }}</u></b
+              >
+              ปี และอาศัยอยู่บ้านเลขที่
+              <b
+                ><u>{{ room_rent.owner.address }}</u></b
+              >
             </b-card-body>
           </b-card>
         </b-card-group>
